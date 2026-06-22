@@ -143,6 +143,7 @@ def bar_color(s):
     return "#2d6a4f" if s>=7 else "#d97706" if s>=5 else "#c1121f"
 
 # Loaders 
+def load_jobs():
     return session.sql("""
         SELECT DISTINCT JOB_TITLE
         FROM RESUME_SCREENER_DB.RECRUITING.JOB_DESCRIPTIONS
